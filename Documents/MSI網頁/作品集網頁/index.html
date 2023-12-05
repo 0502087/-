@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集網頁 楊沅敏</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/51c375e060.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script> -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        #portfolio a:hover figcaption {
+            transform: translateY(0);
+            transition-duration: 500ms;
+        }
+
+        #portfolio {
+            background-color: #dcfce7;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="flex h-[70px] bg-slate-900 items-center px-4 pl-10 pr-10 fixed w-full z-50">
+        <a href="#" class="mr-4 text-slate-100">
+            <img src="images/大頭.png" alt="" class="w-[55px] h-full object-cover">
+        </a>
+        <div class="space-x-4">
+            <a href="#about" class="text-slate-100">關於我</a>
+            <a href="#portfolio" class="text-slate-100">作品</a>
+            <a href="#resume" class="text-slate-100">我的履歷</a>
+        </div>
+        <a href="#contact" class="flex space-x-4 ml-auto items-center">
+            <i class="fa-regular fa-message" style="color: #ffffff;"></i>
+            <h3 class="text-slate-100">聯絡我</h3>
+        </a>
+    </nav>
+    <header id="header" class="group pt-[40px] sm:aspect-[9/4] overflow-hidden">
+
+        <div class=" ">
+            <img src="images/Header.jpg" alt="" class="thumbnail corgi w-full h-full object-contain sm:object-cover" />
+        </div>
+        <div
+            class="group-hover:translate-x-0 duration-700 translate-x-[-100%] introduce absolute overflow-hidden inset-0 sm:aspect-[9/4] sm:block hidden">
+            <div class="pt-[18%] sm:w-[35%]  h-full bg-white/20  text-center space-y-4 p-3 backdrop-blur  top-0 ">
+                <h1 class="sm:text-3xl xl:text-5xl text-2xl font-bold">楊沅敏的作品集</h1>
+                <p class="text-sm xl:text-xl sm:text-lg sm:block hidden">歡迎來到我的作品集網站
+                </p>
+
+            </div>
+        </div>
+
+
+    </header>
+    <section class="bg-green-100" id="about">
+        <div class="lg:w-[900px] w-10/12 mx-auto flex-wrap flex items-center py-24 ">
+            <div class="lg:w-1/3 sm:w-1/2 p-8">
+                <div class="rounded-full overflow-hidden drop-shadow" data-aos="fade-right">
+                    <img src="images/IMG_5234.JPG" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="lg:w-2/3 sm:w-1/2 sm:pl-8 text-center sm:textleft" data-aos="fade-in">
+                <h2 class="font-bold text-3xl">楊沅敏</h2>
+                <div class="text-xl mb-4 pt-1">關於我</div>
+                <p class="leading-8">新北市土城人，今年25歲，希望可以成為網頁前端工程師。</p>
+                <p>個性活潑友善，樂於學習。
+
+                    重視工作效率、責任心、邏輯思考，且有耐心，抗壓性高
+
+                    。
+                    專長為網頁前端、UI/UX、平面設計、多媒體影音特效剪輯、美術繪圖。</p>
+            </div>
+        </div>
+    </section>
+    <section id="resume" class="bg-white">
+        <div class="pt-5">
+            <h2 class="text-3xl font-bold text-center">我的履歷</h2>
+        </div>
+        <div class="w-full mx-auto">
+            <img src="images/履歷(1).png" alt="" class="object-cover w-full h-full">
+    </section>
+    <section id="portfolio" class="bg-green-100 pb-8 pt-8" id="service">
+        <div class="container flex mx-auto flex-wrap">
+
+            <div class="md:w-1/2 w-full md:p-4 py-4 px-16 " data-aos="fade-in" data-aos-delay="200"
+                data-aos-duration="600">
+                <div class=" mt-4 text-center  rounded-lg shadow-lg rounded-xl overflow-hidden bg-white">
+                    <h3 class="font-bold text-xl py-4 text-white bg-sky-600">網站作品</h3>
+                    <div class="flex flex-wrap px-5 pt-[20px]">
+                        <div class="">
+                            <a href="https://ramen-dog-god.netlify.app" class="block" target="_blank">
+                                <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                    <img src="images/麵屋犬神.png" alt="" class="w-full h-full object-cover ">
+                                    <figcaption class=" absolute w-full  items-center flex justify-center">
+                                        <div class="text-center text-2xl font-bold text-white">
+                                            麵屋犬神電腦版網站
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap px-5 pt-[20px]">
+                        <div class="">
+                            <a href="https://inu-kami-by-gsap.netlify.app" class="block" target="_blank">
+                                <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                    <img src="images/麵屋犬神-1.png" alt="" class="w-full h-full object-cover ">
+                                    <figcaption class=" absolute w-full  items-center flex justify-center">
+                                        <div class="text-center text-2xl font-bold text-white">
+                                            麵屋犬神-UI點餐系統介紹網頁
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap px-5 pt-[20px] pb-5">
+                        <div class="">
+                            <a href="https://adorable-paprenjak-69db32.netlify.app" class="block" target="_blank">
+                                <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                    <img src="images/狗哥爬蟲.png" alt="" class="w-full h-full object-cover ">
+                                    <figcaption class=" absolute w-full  items-center flex justify-center">
+                                        <div class="text-center text-2xl font-bold text-white">
+                                            狗哥爬蟲-爬蟲專賣店購物網
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full md:p-4 py-4 px-16" data-aos="fade-in " data-aos-delay="500"
+                data-aos-duration="600">
+                <div class="mt-4 text-center  rounded-lg shadow-lg rounded-xl overflow-hidden bg-white">
+                    <h3 class="font-bold text-xl py-4 text-white bg-teal-600">影片作品</h3>
+                    <div class="flex flex-wrap px-5 pt-[20px] overflow-hidden  rounded-lg ">
+                        <iframe class="w-full h-full rounded-lg aspect-[2/1] object-cover"
+                            src="https://www.youtube.com/embed/nHWZRb3qtp0?si=POHxLFQ8wXvzhtJn"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="flex flex-wrap px-5 pt-[20px] overflow-hidden  rounded-lg pb-5">
+                        <iframe class="w-full h-full rounded-lg object-cover aspect-[2/1]"
+                            src="https://www.youtube.com/embed/aDrVn01tJgc?si=ZpzxJp-8_ssL4tTL"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full md:p-4 py-4 px-16">
+                <div class="mt-4 text-center  rounded-lg shadow-lg rounded-xl overflow-hidden bg-white"
+                    data-aos-delay="700" data-aos-duration="600">
+                    <h3 class="font-bold text-xl py-4 text-white bg-cyan-600">平面作品</h3>
+                    <div class="container flex flex-wrap">
+                        <div class=" flex flex-wrap px-5 pt-[20px] pb-5">
+                            <div class="">
+                                <a href="https://www.figma.com/file/3BXvFt7YW8mrvz13mtf7VN/%E9%BA%B5%E5%B1%8B%E7%8A%AC%E7%A5%9E?type=design&node-id=0%3A1&mode=design&t=swtZtcJEaw2PpJr8-1"
+                                    class="block" target="_blank">
+                                    <figure class="relative overflow-hidden rounded-lg aspect-[5/1]">
+                                        <img src="images/UI.png" alt="" class="w-full h-full object-cover ">
+                                        <figcaption class=" absolute w-full  items-center flex justify-center">
+                                            <div class="text-center text-2xl font-bold text-white">
+                                                UI/UX介面設計-麵屋犬神-拉麵店內用點餐手機版網站
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" flex flex-wrap px-5 pt-[20px] pb-5">
+                            <div class="">
+                                <a href="https://107letsgo.wixsite.com/letsgo?fbclid=IwAR2KRqkxbZ9pr0fqFSAVtNNAWb8nrKhWFDBLEV3fwL9les8nLUGWWfR_N88"
+                                    class="block" target="_blank">
+                                    <figure class="relative overflow-hidden rounded-lg aspect-[5/1]">
+                                        <img src="images/let's go.png" alt="" class="w-full h-full object-cover ">
+                                        <figcaption class=" absolute w-full  items-center flex justify-center">
+                                            <div class="text-center text-2xl font-bold text-white">
+                                                大學畢業專題製作-立體書
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" md:w-1/2 xl:w-1/3 flex flex-wrap px-5 pt-[20px] pb-5">
+                            <div class="">
+                                <a href="https://drive.google.com/file/d/1jB1BQuuuIWi-eXlDR3k3Pop5-ZPo35Ey/view?usp=sharing"
+                                    class="block" target="_blank">
+                                    <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                        <img src="images/洗衣球.png" alt="" class="w-full h-full object-cover ">
+                                        <figcaption class=" absolute w-full  items-center flex justify-center">
+                                            <div class="text-center text-2xl font-bold text-white">
+                                                長條電商banner
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" md:w-1/2 xl:w-1/3 flex flex-wrap px-5 pt-[20px] pb-5">
+                            <div class="">
+                                <a href="https://drive.google.com/file/d/1DSgilNZtRQxLKEu5SJ8BGssgk5EzR6F3/view?usp=sharing"
+                                    class="block" target="_blank">
+                                    <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                        <img src="images/8891-1.png" alt="" class="w-full h-full object-cover ">
+                                        <figcaption class=" absolute w-full  items-center flex justify-center">
+                                            <div class="text-center text-2xl font-bold text-white">
+                                                8891中古車銷售banner
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" md:w-1/2 xl:w-1/3 flex flex-wrap px-5 pt-[20px] pb-5">
+                            <div class="">
+                                <a href="https://drive.google.com/file/d/1kfrdFjWm71t2HO019nPKtrJKNv57KSF0/view?usp=sharing"
+                                    class="block" target="_blank">
+                                    <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                        <img src="images/8891-2.png" alt="" class="w-full h-full object-cover ">
+                                        <figcaption class=" absolute w-full  items-center flex justify-center">
+                                            <div class="text-center text-2xl font-bold text-white">
+                                                8891中古車銷售banner
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" md:w-1/2 xl:w-1/3 flex flex-wrap px-5 pt-[20px] pb-5">
+                            <div class="">
+                                <a href="https://drive.google.com/file/d/11vU9eGb9MpZHG0XpJ5OO7GWP7kRYXaoF/view?usp=sharing"
+                                    class="block" target="_blank">
+                                    <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                        <img src="images/menu.png" alt="" class="w-full h-full object-cover ">
+                                        <figcaption class=" absolute w-full  items-center flex justify-center">
+                                            <div class="text-center text-2xl font-bold text-white">
+                                                菜單設計
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" md:w-1/2 xl:w-1/3 flex flex-wrap px-5 pt-[20px] pb-5">
+                            <div class="">
+                                <a href="https://drive.google.com/file/d/1BEUsRZpQB-SlhV7op4B-VUi11U4vyUr3/view?usp=sharing"
+                                    class="block" target="_blank">
+                                    <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                        <img src="images/資訊圖表.png" alt="" class="w-full h-full object-cover ">
+                                        <figcaption class=" absolute w-full  items-center flex justify-center">
+                                            <div class="text-center text-2xl font-bold text-white">
+                                                資訊圖表設計
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" md:w-1/2 xl:w-1/3 flex flex-wrap px-5 pt-[20px] pb-5">
+                            <div class="">
+                                <a href="https://drive.google.com/file/d/1nMAGF7scwQ9Hgp80xlJ06Tfb14fE2t5n/view?usp=sharing"
+                                    class="block" target="_blank">
+                                    <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                        <img src="images/插畫-1.png" alt="" class="w-full h-full object-cover ">
+                                        <figcaption class=" absolute w-full  items-center flex justify-center">
+                                            <div class="text-center text-2xl font-bold text-white">
+                                                電繪插畫
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" md:w-1/2 xl:w-1/3 flex flex-wrap px-5 pt-[20px] pb-5">
+                            <div class="">
+                                <a href="https://drive.google.com/file/d/1Mop9gus-k8vWEWQHXTj0p1z2jwMPiSjt/view?usp=sharing"
+                                    class="block" target="_blank">
+                                    <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                        <img src="images/插畫-2.png" alt="" class="w-full h-full object-cover ">
+                                        <figcaption class=" absolute w-full  items-center flex justify-center">
+                                            <div class="text-center text-2xl font-bold text-white">
+                                                電繪插畫
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class=" md:w-1/2 xl:w-1/3 flex flex-wrap px-5 pt-[20px] pb-5">
+                            <div class="">
+                                <a href="https://drive.google.com/file/d/1VpMTj7uK5kW3BorQz18DRwJEt5Q4zrGK/view?usp=sharing"
+                                    class="block" target="_blank">
+                                    <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                        <img src="images/插畫-4.png" alt="" class="w-full h-full object-cover ">
+                                        <figcaption class=" absolute w-full  items-center flex justify-center">
+                                            <div class="text-center text-2xl font-bold text-white">
+                                                電繪插畫
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class=" md:w-1/2 xl:w-1/3 flex flex-wrap px-5 pt-[20px] pb-5">
+                            <div class="">
+                                <a href="https://drive.google.com/file/d/1b5534GXc1ETOEROXxCxQhiGljYregJsx/view?usp=sharing"
+                                    class="block" target="_blank">
+                                    <figure class="relative overflow-hidden rounded-lg aspect-[2/1]">
+                                        <img src="images/插畫-3.png" alt="" class="w-full h-full object-cover ">
+                                        <figcaption class=" absolute w-full  items-center flex justify-center">
+                                            <div class="text-center text-2xl font-bold text-white">
+                                                電繪插畫
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-yellow-50 pt-12 pb-16" id="contact">
+        <div class="sm:w-1/2 w-2/3 mx-auto">
+            <div>
+                <h2 class="text-3xl font-bold text-center pb-5">我的聯絡資訊</h2>
+            </div>
+            <div class="space-y-10 sm:pl-[30%] pt-5 ">
+                <div class="flex items-center space-x-5 ">
+                    <i class="fa-solid fa-envelope fa-2xl scale-125" style="color: #001452;"></i>
+                    <p class="text-xl text-[#001452]">eoe0929808910@gmail.com</p>
+                </div>
+                <div class="flex items-center space-x-5 ">
+                    <i class="fa-brands fa-line fa-2xl scale-125" style="color: #001452;"></i>
+                    <p class="text-xl text-[#001452]">0920808910</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="flex flex-wrap justify-between px-5 py-5 bg-slate-900 text-white pt-[5%]">
+        <div class="w-1/2 ">
+            <ul class="space-y-5">
+            <li>COPYRIGHTS&copy;2023.Yang Yuan Min.All Rights Reserved</li>
+            <li>Yang Yuan Min's Portfolio</li>
+            <li>&copy;2023楊沅敏著作權所有</li>
+            </ul>
+        </div>
+        <div class="w-1/2 text-right">
+            Design By Yang Yuan Min
+        </div>
+     
+            <div class="mt-5 mr-[5%] ml-auto w-[20%]">
+                <a href="#">
+                <img src="images/太空柯基 (2).png" class="object-cover w-full h-full" alt="">
+            </a>
+            </div>
+   
+    </footer>
+    <script>
+        var image = document.getElementsByClassName('thumbnail');
+        new simpleParallax(image);
+
+        AOS.init();
+    </script>
+</body>
+
+</html>

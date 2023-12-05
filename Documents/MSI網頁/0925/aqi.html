@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container"></div>
+    <script>
+
+        let url = 'https://data.moenv.gov.tw/api/v2/aqx_p_432?api_key=e8dd42e6-9b8b-43f8-991e-b3dee723a52d&limit=1000&sort=ImportDate%20desc&format=JSON';
+        fetch(url).then(res => res.json()).then(datas => {
+
+            for (let data of datas.records) {
+
+                let aqi = data.aqi;
+                let aqi_div = document.createElement('div');
+                aqi_div.append('AQI指數'+aqi);
+                aqi_div.classList.add('aqi');
+                // console.log(aqi);
+                let container = document.querySelector('.container');
+                container.append(aqi_div);
+
+
+                // my_aqi.classList.add('aqi')
+                // let my_aqi = document.createElement('div');
+                // my_aqi.classList.add('aqi');
+                // my_aqi.append(aqi);
+                // el.append(aqi);
+            }
+        })
+    </script>
+</body>
+
+</html>

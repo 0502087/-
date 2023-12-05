@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>HELLO GSAP</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto molestiae facere non fugit maiores odit
+            quasi repudiandae odio, earum accusamus dolor at assumenda sit asperiores pariatur, maxime, suscipit
+            provident tempore?</p>
+        <a href="#">GO</a>
+    </div>
+    <script>
+        let tl = gsap.timeline();
+        tl.from('h1', { opcity: 0, duration: 1, dutation: 1 })
+            .from('p', { opcity: 0, duration: 1, dutation: 1 })
+            .from('a', { opcity: 0, duration: 1, dutation: 1 })
+    </script>
+</body>
+
+</html>

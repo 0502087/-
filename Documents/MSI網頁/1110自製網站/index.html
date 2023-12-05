@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>狗哥爬蟲</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/51c375e060.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url(image/brown-background-natural-sand-texture.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+
+        nav {
+            background-color: white;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 550px;
+        }
+
+        .footer-container {
+            flex: 1 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="py-2 bg-white">
+        <div class="container flex flex-wrap items-center">
+            <div class="px-4 text-black"><i class="fa-solid fa-truck-arrow-right" style="color: #001e80;"></i>
+                滿額享宅配免運
+            </div>
+            <div class="flex ml-auto px-4 space-x-4">
+                <div class="flex space-x-4 items-center border-r-2 border-black px-4">
+                    <i class="fa-brands fa-facebook-f" style="color: #001e80;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #001e80;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #001e80;"></i>
+                    <i class="fa-brands fa-pinterest-p" style="color: #001e80;"></i>
+                </div>
+                <div class="border-r-2 border-black px-4">
+                    <a href="#" class="text-xs">USD</a>
+                    <i class="fa-solid fa-chevron-down" style="color: #001e80;"></i>
+                </div>
+                <div class="border-r-2 border-black  px-4">
+                    <a href="#" class="text-xs ">ENG</a>
+                    <i class="fa-solid fa-chevron-down" style="color: #001e80;"></i>
+                </div>
+                <div>
+                    <a href="#" class="text-xs">登入</a> /
+                    <a href="#" class="text-xs">註冊</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav>
+        <div class="container mx-auto flex flex-wrap h-16 items-center justify-between px-3 h-[150px]">
+            <div>
+                <a href="#"><img class="w-[300px]" src="image/狗哥爬蟲.svg" alt=""></a>
+            </div>
+            <div class="space-x-4 text-bold text-xl pt-[50px]">
+                <a href="#">活體</a>
+                <a href="#">器材</a>
+                <a href="#">分類</a>
+                <a href="#">餌料</a>
+                <a href="#">關於我們</a>
+            </div>
+            <div class="space-x-3">
+                <a href="#"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+                <a href="#"><i class="fa-regular fa-heart fa-xl"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <!-- Image By grmarc -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img
+                        src="image/leaopard-gecko-closeup-with-moss-wiyh-black-background-tomato-gecko-closeup-head-animal-closeup.jpg"
+                        alt="" class="w-full h-full object-cover"></div>
+                <div class="swiper-slide"><img src="image/Blue-Tongue-edited-1.jpg" alt=""
+                        class="w-full h-full object-cover"></div>
+                <div class="swiper-slide"><img src="image/鬆獅蜥-scaled.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </header>
+    <section class="bg-white">
+        <div class="container mx-auto flex flex-wrap py-3">
+            <div class="w-1/4 p-3">
+                <figure class="relative aspect-video">
+                    <img src="image/boa-constrictors-isolated-black-background.jpg" alt=""
+                        class="w-full h-full object-cover">
+                    <figcaption
+                        class="absolute inset-0 m-auto bg-zinc-300/50 hover:text-white hover:bg-zinc-300/0 duration-300 flex flex-col justify-center pl-5">
+                        <div class="text-xs">活體區</div>
+                        <h3 class="text-3xl font-bold">蛇類</h3>
+                        <a href="#" class="text-xs underline">馬上下單</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="w-1/4 p-3">
+                <figure class="relative aspect-video">
+                    <img src="image/closeup-iguana-zoo.jpg" alt="" class="w-full h-full object-cover">
+                    <figcaption
+                        class="absolute inset-0 m-auto bg-zinc-300/50 hover:text-white hover:bg-zinc-300/0 duration-300 flex flex-col justify-center pl-5">
+                        <div class="text-xs">活體區</div>
+                        <h3 class="text-3xl font-bold">蜥蜴類</h3>
+                        <a href="#" class="text-xs underline">馬上下單</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="w-1/4 p-3">
+                <figure class="relative aspect-video">
+                    <img src="image/tiny-amazon-milk-frog-dumpy-frog-branch.jpg" alt=""
+                        class="w-full h-full object-cover">
+                    <figcaption
+                        class="absolute inset-0 m-auto bg-zinc-300/50 hover:text-white hover:bg-zinc-300/0 duration-300 flex flex-col justify-center pl-5">
+                        <div class="text-xs">活體區</div>
+                        <h3 class="text-3xl font-bold">蛙類</h3>
+                        <a href="#" class="text-xs underline">馬上下單</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="w-1/4 p-3">
+                <figure class="relative aspect-video">
+                    <img src="image/red-footed-tortoise-walking-park.jpg" alt="" class="w-full h-full object-cover">
+                    <figcaption
+                        class="absolute inset-0 m-auto bg-zinc-300/50 hover:text-white hover:bg-zinc-300/0 duration-300 flex flex-col justify-center pl-5">
+                        <div class="text-xs">活體區</div>
+                        <h3 class="text-3xl font-bold">龜類</h3>
+                        <a href="#" class="text-xs underline">馬上下單</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white drop-shadow-lg">
+        <div class="container mx-auto flex text-black-600 py-[50px]">
+            <div class="w-1/6 text-center">
+                <i class="fa-solid fa-truck-fast fa-2xl pb-6" style="color: #4a4a4a;"></i>
+                <h4><a href="#" class="text-center">宅配運送</a></h4>
+            </div>
+            <div class="w-1/6 text-center">
+                <i class="fa-solid fa-box fa-2xl pb-6" style="color: #4a4a4a;"></i>
+                <h4><a href="#" class="text-center">安全包裝</a></h4>
+            </div>
+            <div class="w-1/6 text-center">
+                <i class="fa-regular fa-face-smile-wink fa-2xl pb-6" style="color: #4a4a4a;"></i>
+                <h4><a href="#" class="text-center">售後服務</a></h4>
+            </div>
+            <div class="w-1/6 text-center">
+                <i class="fa-regular fa-hand-point-up fa-2xl pb-6" style="color: #4a4a4a;"></i>
+                <h4><a href="#" class="text-center">運送風險賣家承擔</a></h4>
+            </div>
+            <div class="w-1/6 text-center">
+                <i class="fa-solid fa-check fa-2xl pb-6" style="color: #4a4a4a;"></i>
+                <h4><a href="#" class="text-center">活體健康保證</a></h4>
+            </div>
+            <div class="w-1/6 text-center">
+                <i class="fa-regular fa-comments fa-2xl pb-6" style="color: #4a4a4a;"></i>
+                <h4><a href="#" class="text-center">飼養問題諮詢</a></h4>
+            </div>
+    </section>
+    <div class="text-center space-y-6 py-[80px]">
+        <h2 class="text-4xl font-bold">設備器材</h2>
+        <div class="space-y-2">
+            <p>美國進口飼養器材</p>
+            <p>整套買齊，飼養沒煩惱</p>
+        </div>
+    </div>
+    <section class="bg-white/40 py-[30px]">
+        <div class="container flex mx-auto">
+            <div class="w-1/4 mx-4 drop-shadow-lg">
+                <figure class="relative group aspect-[3/4]">
+                    <img src="image/reptizoo-30x30x60cmphk02hs.jpg" class="object-cover w-full h-full" alt="">
+                    <figcaption
+                        class="group-hover:bg-black/60 flex flex-col items-center justify-center space-y-3 m-auto absolute inset-0">
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-regular fa-heart"></i></a>
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </figcaption>
+                </figure>
+                <div class="text-center space-y-4 px-5 my-4">
+                    <h4>REPTIZOO 雨林生態飼養箱</h4>
+                    <h5 class="text-xl font-bold">$1480元</h5>
+                </div>
+            </div>
+            <div class="w-1/4 mx-4 drop-shadow-lg">
+                <figure class="relative group aspect-[3/4]">
+                    <img src="image/51VBqYitZ0L._AC_UL600_SR600,600_.jpg" class="object-cover w-full h-full" alt="">
+                    <figcaption
+                        class="group-hover:bg-black/60 flex flex-col items-center justify-center space-y-3 m-auto absolute inset-0">
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-regular fa-heart"></i></a>
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </figcaption>
+                </figure>
+                <div class="text-center space-y-4 px-5 my-4">
+                    <h4>YOUMU 爬蟲加熱墊</h4>
+                    <h5 class="text-xl font-bold">$980元</h5>
+                </div>
+            </div>
+            <div class="w-1/4 mx-4 drop-shadow-lg">
+                <figure class="relative group aspect-[3/4]">
+                    <img src="image/b409829cb2618eb9dce9b6765ffc57a9.jpeg" class="object-cover w-full h-full" alt="">
+                    <figcaption
+                        class="group-hover:bg-black/60 flex flex-col items-center justify-center space-y-3 m-auto absolute inset-0">
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-regular fa-heart"></i></a>
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </figcaption>
+                </figure>
+                <div class="text-center space-y-4 px-5 my-4">
+                    <h4>REPTIZOO 樹脂爬蟲水盆</h4>
+                    <h5 class="text-xl font-bold">$480元</h5>
+                </div>
+            </div>
+            <div class="w-1/4 mx-4 drop-shadow-lg">
+                <figure class="relative group aspect-[3/4]">
+                    <img src="image/38091bd591257ccd50727bd8a3740375.jpeg" class="object-cover w-full h-full" alt="">
+                    <figcaption
+                        class="group-hover:bg-black/60 flex flex-col items-center justify-center space-y-3 m-auto absolute inset-0">
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-regular fa-heart"></i></a>
+                        <a href="#"
+                            class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </figcaption>
+                </figure>
+                <div class="text-center space-y-4 px-5 my-4">
+                    <h4>HEATING 爬蟲UVA燈泡</h4>
+                    <h5 class="text-xl font-bold">$550元</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-center py-[100px]">
+        <h2 class="text-4xl font-bold mb-[20px]">熱門商品</h2>
+        <p>各種爬蟲類飼主必備！買了絕對用得到</p>
+        <p>你要找的就在這</p>
+    </div>
+    <section class="">
+        <div class="container flex px-[70px] mx-auto ">
+            <div class="p-4 w-1/2 mx-4 drop-shadow-lg ">
+                <div class="flex flex-wrap">
+                    <figure class="relative group aspect-[3/4]">
+                        <img src="image/148822819_197566805441725_1062787463965954935_n.jpg"
+                            class="object-cover w-full h-full" alt="">
+                        <figcaption
+                            class="group-hover:bg-black/60 flex flex-col items-center justify-center space-y-3 m-auto absolute inset-0">
+                            <a href="#"
+                                class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="#"
+                                class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                    class="fa-regular fa-heart"></i></a>
+                            <a href="#"
+                                class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                        </figcaption>
+                    </figure>
+                    <div class="text-left space-y-4 px-5 my-4">
+                        <h4>爬蟲躲避屋</h4>
+                        <h5 class="text-xl font-bold">$580元</h5>
+                    </div>
+                </div>
+                <div class=" flex">
+                    <div class="pr-4 w-1/2  drop-shadow-lg ">
+                        <figure class="relative group aspect-[3/4]">
+                            <img src="image/65963de2dc5d3d9ea78d5c354a17779a.jpeg" class="object-cover w-full h-full"
+                                alt="">
+                            <figcaption
+                                class="group-hover:bg-black/60 flex flex-col items-center justify-center space-y-3 m-auto absolute inset-0">
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-regular fa-heart"></i></a>
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                            </figcaption>
+                        </figure>
+                        <div class="text-left space-y-4 px-5 my-4">
+                            <h4>溫溼度計</h4>
+                            <h5 class="text-xl font-bold">$90元</h5>
+                        </div>
+                    </div>
+                    <div class="bottom-0 pl-4 w-1/2  drop-shadow-lg">
+                        <figure class="relative group aspect-[3/4]">
+                            <img src="image/W1siZiIsIjE5MDA3L3Byb2R1Y3RzLzM2MzUzNzYyLzE2NDYzODQ3MTFfYzI4YTQwYmNmYTNjM2ZkNDM3ODQuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg"
+                                class="object-cover w-full h-full" alt="">
+                            <figcaption
+                                class="group-hover:bg-black/60 flex flex-col items-center justify-center space-y-3 m-auto absolute inset-0">
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-regular fa-heart"></i></a>
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                            </figcaption>
+                        </figure>
+                        <div class="text-left space-y-4 px-5 my-4">
+                            <h4>尿布墊片</h4>
+                            <h5 class="text-xl font-bold">$110元</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-4 w-1/2 ">
+                <div class="flex flex-wrap">
+                    <div class="pr-4 w-1/2  drop-shadow-lg ">
+                        <figure class="relative group aspect-[3/4]">
+                            <img src="image/sIjE5MDA3L3Byb2R1Y3RzLzM1NzEzMjQ5LzE2Mzk4MDc1OTdfMmI4YWRmMjI0ZDMwNWIzNjkwMDguanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg"
+                                class="object-cover w-full h-full" alt="">
+                            <figcaption
+                                class="group-hover:bg-black/60 flex flex-col items-center justify-center space-y-3 m-auto absolute inset-0">
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-regular fa-heart"></i></a>
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                            </figcaption>
+                        </figure>
+                        <div class="text-left space-y-4 px-5 my-4">
+                            <h4>WEIYITER 爬蟲D3鈣粉</h4>
+                            <h5 class="text-xl font-bold">$390元</h5>
+                        </div>
+                    </div>
+                    <div class="pl-4 w-1/2  drop-shadow-lg ">
+                        <figure class="relative group aspect-[3/4]">
+                            <img src="image/產品照01.jpg.png" class="object-cover w-full h-full" alt="">
+                            <figcaption
+                                class="group-hover:bg-black/60 flex flex-col items-center justify-center space-y-3 m-auto absolute inset-0">
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-regular fa-heart"></i></a>
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                            </figcaption>
+                        </figure>
+                        <div class="text-left space-y-4 px-5 my-4">
+                            <h4>不鏽鋼餵食夾</h4>
+                            <h5 class="text-xl font-bold">$1980元</h5>
+                        </div>
+                    </div>
+                    <div class="bottom-0 drop-shadow-lg ">
+                        <figure class="relative group aspect-[3/4]">
+                            <img src="image/c091db7ef63081cda111c0caa9ef7031.jpeg" class="object-cover w-full h-full"
+                                alt="">
+                            <figcaption
+                                class="group-hover:bg-black/60 flex flex-col items-center justify-center space-y-3 m-auto absolute inset-0">
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a>
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-regular fa-heart"></i></a>
+                                <a href="#"
+                                    class="pt-[5px] items-center text-center inline-block w-9 h-9 bg-white hover:bg-yellow-400 opacity-0 group-hover:opacity-100 duration-500 translate-y-3 group-hover:translate-y-0 rounded-full"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                            </figcaption>
+                        </figure>
+                        <div class="text-left space-y-4 px-5 my-4">
+                            <h4>20w爬蟲加溫墊</h4>
+                            <h5 class="text-xl font-bold">$1980元</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="w-[80%] pl-[25px] flex container mx-auto">
+        <div class="w-1/5 p-5">
+            <img src="image/截圖 2023-11-16 下午11.55.37.png" alt="w-full h-full object-cover">
+        </div>
+        <div class="w-1/5 p-5">
+            <img src="image/截圖 2023-11-16 下午11.55.37.png" alt="w-full h-full object-cover">
+        </div>
+        <div class="w-1/5 p-5">
+            <img src="image/截圖 2023-11-16 下午11.55.37.png" alt="w-full h-full object-cover">
+        </div>
+        <div class="w-1/5 p-5">
+            <img src="image/截圖 2023-11-16 下午11.55.37.png" alt="w-full h-full object-cover">
+        </div>
+        <div class="w-1/5 p-5">
+            <img src="image/截圖 2023-11-16 下午11.55.37.png" alt="w-full h-full object-cover">
+        </div>
+    </div>
+    <footer class="bg-black text-white mt-[80px] h-[400px]">
+        <div class="footer-container flex mx-auto justify-center px-[100px] pt-[100px]">
+            <div class="px-[50px] leading-10">
+                <ul>
+                    <li>地址：新北市土城區中央路四段666號8樓</li>
+                    <li>電話：2218930322</li>
+                    <li>E-mail:1234@gmail.com</li>
+                </ul>
+            </div>
+            <div class="px-[50px] leading-10">
+                <ul>
+                    <li>地址：新北市土城區中央路四段666號8樓</li>
+                    <li>電話：2218930322</li>
+                    <li>E-mail:1234@gmail.com</li>
+                </ul>
+            </div>
+            <div class="px-[50px] leading-10">
+                <ul>
+                    <li>地址：新北市土城區中央路四段666號8樓</li>
+                    <li>電話：2218930322</li>
+                    <li>E-mail:1234@gmail.com</li>
+                </ul>
+            </div>
+            <div class="px-[50px] leading-10">
+                <ul>
+                    <li>地址：新北市土城區中央路四段666號8樓</li>
+                    <li>電話：2218930322</li>
+                    <li>E-mail:1234@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="foods">
+
+    </div>
+    <script>
+    const foods = [
+        {
+            id:1,
+            name:'你媽',
+            price:'50'
+        },
+        {
+            id:2,
+            name:'破夠',
+            price:'ㄅ0'
+        },
+        {
+            id:3,
+            name:'狗雞巴',
+            price:'ㄓ0'
+        },
+        {
+            id:4,
+            name:'龜頭',
+            price:'100'
+        }
+
+    ];
+    let el = document.querySelector('.foods');
+    for(let f of foods){
+        let div =  document.createElement('div');
+        div.append(f.name);
+        el.append(div);
+       
+    }
+    </script>  
+</body>
+</html>

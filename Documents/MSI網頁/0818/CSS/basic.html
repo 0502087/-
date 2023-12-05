@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- 選取器有下面三種 標籤ＴＡＧ 類別class ID
+!important>嵌入>ID>class>tag（important盡量不要用 尤其是既定頁面
+當權重相同時，後寫優先 
+picsum.photos-->
+    <style>
+        h2{color: blue;}
+        .abc{color: aqua;}
+        .aaa{
+            color: rgb(254, 0, 55)!important;
+        }
+    
+        #xyz{color: rgb(255, 154, 189);}
+    </style>
+    <!--    給一個link連到ＣＳＳ字才會變色 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: #17f0ba;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt illum officiis provident accusantium maxime adipisci fugit, et modi amet distinctio corporis officia aut totam itaque similique! Vel rerum consequatur aperiam?</h1>
+    <p style="color: #ff970f;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt amet dolorum ipsa assumenda voluptas non ipsum asperiores quas eos deleniti, beatae, officiis consequuntur enim est incidunt laborum rerum ut deserunt.</p>
+    <h2>hello css</h2>
+    <h3>數碼以下預測周圍請您，幹部也能，最近可以用，產生神秘訪問驅。</h3>
+    <li class="abc">123</li>
+    <li>123</li>
+    <li id="xyz" style="color: #fff200;" class="abc" class="aaa"> 123</li>
+    <li>123</li>
+    <li>123</li>
+    <li>123</li>
+</body>
+</html>

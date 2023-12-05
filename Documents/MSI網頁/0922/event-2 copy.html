@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: brown;
+            background-color: beige;
+            padding: 30px;
+        }
+
+        p {
+            transition: 500ms;
+        }
+    </style>
+
+<body>
+    <button class="add" >Add</button>
+    <button class="remove">Remove</button>
+    <button class="toggle">Toggle</button>
+    <p>今後備案趨勢體育廣告用戶立刻就好共同如何，一口氣周邊原始碼傳播萬華因為校長注意市場精美維修，據說不能精神總統，大家確實模樣對她爸爸司機呵呵馬上明年語言特點，剛才的人提出了，內心究竟軟體相機偉大反映，打擊如同先進性調整事實即可成員受傷感染國務院，用途某些沒。
+    </p>
+
+    <script>
+        let p = document.querySelector('p');
+        let add = document.querySelector('.add');
+        let remove = document.querySelector('.remove');
+        let toggle = document.querySelector('.toggle');
+
+        add.addEventListener('click',function(){
+            p.classList.add('red');
+        });
+        function rm(){
+            p.classList.remove('red');
+        }
+          
+        remove.addEventListener('click',rm
+        );
+
+        toggle.addEventListener('click',()=>{
+            p.classList.toggle('red');
+        },true);
+
+    </script>
+
+</body>
+
+</html>

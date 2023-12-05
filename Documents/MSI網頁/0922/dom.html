@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">title</h1>
+    <p class="content">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, ratione?
+    </p>
+    <div class="container">
+        <h2 class="subtitle">title</h2>
+        <p class="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod hic reiciendis? Deleniti voluptate
+            impedit non. Accusantium modi placeat, molestiae ut rem, dolorem maxime dignissimos expedita cumque vitae
+            minus dolorum.
+        </p>
+        <ul class="list">
+            <li class="item">list 1</li>
+            <li class="item">list 2</li>
+            <li class="item">list 3</li>
+            <li class="item">list 4</li>
+            <li class="item">list 5</li>
+        </ul>
+    </div>
+    <script>
+        //  let el = document.querySelectorAll('.item');
+        //  console.log(el);
+        let title = document.getElementById
+        let p = document.getElementsByTagName('p');
+        // console.log(p);
+        let nodeList = document.querySelectorAll('.item');
+        let collection = document.getElementsByClassName('item');
+        // console.log(nodeList, collection);
+        nl = nodeList.length;
+        cl = collection.length;
+        let newNode = Array.from(nodeList);
+        let newColl = Array.from(collection);
+        // console.log(newNode,newColl);
+    </script>
+</body>
+
+</html>

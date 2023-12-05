@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日天氣 楊沅敏</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #app {
+            text-align: center;
+            width: 300px;
+            height: 400px;
+            background-color: rgb(246, 218, 218);
+           padding-top: 35px;
+            border-radius: 13px;
+            box-shadow: 5px 5px 10px #8888;
+            position: fixed;
+            inset: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <select name="" id="" v-model="q" @change="getWeather()" style="margin-bottom: 30px;">
+            <option value="">-請選擇-</option>
+            <option value="taipei">台北</option>
+            <option value="bangkok">曼谷</option>
+            <option value="seoul">首爾</option>
+            <option value="tokyo">東京</option>
+        </select>
+        <div v-if="weathers !=''">
+        <h2>今日天氣 {{weathers.weather[0].description}}</h2>
+        <img :src="`https://openweathermap.org/img/wn/${weathers.weather[0].icon}@2x.png`" alt="">
+        <div>平均溫度:{{weathers.main.temp}}&deg;C</div>
+        <div>最高溫度:{{weathers.main.temp_max}}&deg;C</div>
+        <div>最低溫度:{{weathers.main.temp_min}}&deg;C</div>
+        <div>體感溫度:{{weathers.main.feels_like}}&deg;C</div>
+    </div>
+    </div>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    q:'',
+                    weathers: ''
+                }
+            },
+            // created() {
+            //     const url = 'https://api.openweathermap.org/data/2.5/weather?q=taipei&units=metric&lang=zh_tw&appid=e8271e2955da4cb22aac82bdcd11facb'
+            //     fetch(url)
+            //         .then(res => res.json())
+            //         .then(data => {
+            //             this.weathers = data;
+            //         })
+            // },
+            methods:{
+                getWeather(){
+                    const url = `https://api.openweathermap.org/data/2.5/weather?q=${this.q}&units=metric&lang=zh_tw&appid=e8271e2955da4cb22aac82bdcd11facb`
+                fetch(url)
+                    .then(res => res.json())
+                    .then(data => {
+                        this.weathers = data;
+                        console.log(data);
+                    })
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+
+</html>

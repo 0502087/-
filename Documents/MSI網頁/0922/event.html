@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            transition: 500ms;
+        }
+        .red {
+            color: red;
+            background-color: #ccc;
+            padding: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <button class="add">Add</button>
+    <button class="remove">Remove</button>
+    <button class="toggle">Toggle</button>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis suscipit dignissimos sit libero quam alias, provident nisi neque nam velit optio eos nulla repellat a quidem tempora deleniti ducimus magnam?
+    </p>
+  <script>
+    let add =document.querySelector('.add');
+    let remove =document.querySelector('.remove');
+    let toggle =document.querySelector('.toggle');
+    let p =document.querySelector('p');
+
+
+    add .onclick = () => {
+        p.classList .add('red');
+    }
+    remove .onclick = () => {
+        p.classList .add('red');
+    }
+    add .onclick = () => {
+        p.classList .add('red');
+    }
+  </script>
+</body>
+</html>

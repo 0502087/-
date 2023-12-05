@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const foods = [
+            {
+                id: 1,
+                name: '滷肉飯',
+                price: '190'
+            },
+            {
+                id: 2,
+                name: '牛肉麵',
+                price: '500'
+            },
+            {
+                id: 3,
+                name: '控肉飯',
+                price: '500'
+            }
+        ];
+
+        // foods.forEach(function(data,idx){
+        //     console.log(idx);
+        //     console.log(data.name);
+        //     console.log(data.price);
+
+        // })
+        const foods_name = foods.map(function (data) {
+            return data.name;
+        })
+        //console.log(foods_name);
+       const beef = foods.filter(function(data){
+        return data.name !='牛肉麵'
+       })
+       const food_some =foods.some(function(data){
+        return data.price === '190';
+       })
+       console.log(food_some);
+       
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #098;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <script>
+        // gsap.to(".box", { rotation: 360, scale:0,opcity:0, duration: 3 });
+        // gsap.from(".box", { rotation: 360, scale:0,opcity:0, duration: 3 });
+        // gsap.fromTo(".box", { rotation: 27, x: 100, duration: 1 });
+        // gsap.to('.box', {
+        //     //y:600,
+        //     rotate:360,
+        //     delay:1,
+        //     repeat:-1,
+        //     ease:'steps(12)',
+        //     yoyo:true,
+        //     duration:3
+        // })
+        gsap.to('.box',{
+            x:600,
+            stagger:{
+                //each:1,
+                amount:1,
+                from:'random',
+                //start,end,center,edges,radom
+            },
+            duration:2
+        })
+    </script>
+</body>
+
+</html>

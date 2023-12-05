@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>假網路商城</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    .cart{
+        transition: 600ms;
+    }
+    .open{
+        transform: translateX(0)!important;
+        transition: 600ms;
+    }
+  
+</style>
+<body>
+    <div id="app">
+        <nav class="py-5 bg-black ">
+            <a href="#" class="text-white flex pl-5 text-2xl" @click.prevent="open = !open">購物車</a>
+        </nav>
+        <!-- {{open}} -->
+        <div 
+        :class="{open:open}" 
+        class="cart w-[400px] h-screen bg-zinc-300 right-0 top-0 fixed p-3 translate-x-full ">
+            <div v-for="cart ,idx in carts" class="p-4">
+                <h3>{{cart.title}}</h3>
+                <div>
+                    {{cart.price}}
+                </div>
+                <a href="#" @click="removeItem(idx)">移除商品</a>
+            </div>
+            <a href="#" @click='ClearCart()' v-if="carts.length !=0 " class="px-2 py-3 bg-red-400 rounded-lg inline-block mt-[20px]">清空購物車</a>
+            <div class="pt-5">
+                小計：{{total}}
+            </div>
+        </div>
+        <div class="container flex flex-wrap mx-auto">
+            <div v-for="product ,idx in products"
+                class="lg:w-1/4 sm:w-1/2 w-full m-5 p-5 rounded-xl border-2 border-zinc-400 bg-zinc-100">
+                <div>
+                    <div>
+                        <img :src="product.image" alt="" class="w-full p-5">
+                    </div>
+                    <h3 class="font-bold text-xl">
+                        {{product.title}}
+                    </h3>
+                    <div class="mt-5">
+                        {{product.price}}
+                    </div>
+                    <a href="#" class="px-5 py-2 rounded-lg bg-blue-400 inline-block mt-5"
+                        @click.prevent="storeToCart(product.id)">加入購物車</a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    products: '',
+                    carts: [],
+                    open:false
+                }
+            },
+            created() {
+                const url = 'https://fakestoreapi.com/products';
+                fetch(url).then(res => res.json()).then(data => {
+                    this.products = data;
+                    console.log(data);
+                })
+            },
+            methods: {
+                storeToCart(pid) {
+                    let pd = this.products.find(data => data.id === pid)
+                    this.carts.push(pd);
+                    // this.carts.push({
+                    //     id: Date.now,
+                    //     pid: pid,
+                    // title:pd.title,
+                    // price:pd.price
+                    // });
+
+                },
+                ClearCart() {
+                    if (confirm('確認清空購物車嗎？')) {
+                        this.carts.length = '0';
+                    }
+
+                },
+                removeItem(idx) {
+                    if (confirm('確認移除商品嗎？')) {
+                        this.carts.splice(idx, 1);
+                    }
+
+                }
+            },
+            computed: {
+                // price(){
+
+                // },
+                total() {
+                    if (this.carts.length > 0) {
+
+                        return this.carts.map(data => data.price).reduce((x, y) => Number(x) + Number(y));
+                    } else {
+                        return 0;
+                    }
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+
+</html>

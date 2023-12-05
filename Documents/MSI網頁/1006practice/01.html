@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <!-- <a href="#">Link</a> -->
+    <div id="app">
+        <form action="#">
+            <input type="text" v-model="input">
+            <input type="button" value="add" @click="add()">
+        </form>
+        <div>
+            <h2>已完成</h2>
+            <form action="">
+                <div v-for="todo in Complete" :key="todo.id">
+                    {{todo.title}}
+                    <input type="checkbox" v-model="todo.isCompleted">
+                </div>
+            </form>
+            <hr>
+            <h2>未完成</h2>
+            <form action="">
+                <div v-for="todo in unComplete" :key="todo.id">
+                    {{todo.title}}
+                    <input type="checkbox" v-model="todo.isCompleted">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    input: '',
+                    todos: [
+                        {
+                            id: 1,
+                            title: '做作業',
+                            isCompleted: true
+                        },
+                        {
+                            id: 2,
+                            title: '洗衣服',
+                            isCompleted: false
+                        }
+                    ]
+                }
+            },
+            methods: {
+                add() {
+                    this.todos.push({
+                        id: Date.now(),
+                        title: this.input,
+                        isCompleted: false
+                    })
+                    this.input = '';
+                }
+            },
+            computed: {
+                Complete() {
+                    return this.todos.filter(data => data.isCompleted === true
+                    )
+
+                },
+                unComplete() {
+                    return this.todos.filter(data => data.isCompleted === false
+                    )
+
+                }
+
+            }
+        }).mount('#app');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麵屋犬神</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/51c375e060.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+         .loading {
+            position: fixed;
+            width: 0;
+            height: 5px;
+            top: 0;
+            left: 0;
+            background-color: rgb(255, 234, 2);
+            z-index: 999;
+        }
+        body {
+            background-image: url(imges/BG-1.jpg);
+            background-position: center;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 70vh;
+        }
+
+        section:nth-of-type(1) {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #second {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #first img {
+            position: absolute;
+            /* inset: 0; */
+
+        }
+
+        #first .logo {
+            inset: 0;
+            width: 60vw;
+            margin-inline: auto;
+
+        }
+
+        #first .inu1 {
+
+            width: 20vw;
+            top: 50%;
+            left: 10%;
+        }
+
+        #first .inu2 {
+
+            width: 20vw;
+            top: 50%;
+            right: 10%;
+        }
+
+        #first h1 {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            left: 33%;
+            margin-top: -5%;
+            color: white;
+            font-size: 2rem;
+            top: 50%;
+            right: 10%;
+        }
+
+        #second .iphone-1 {
+            position: absolute;
+            width: 50vw;
+            transform: rotate(20deg);
+            top: 20%;
+            left: 10%;
+            z-index: 10;
+        }
+
+        #second h2 {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            color: white;
+            font-size: 8rem;
+            left: 42%;
+            top: 30%;
+            z-index: 5;
+            opacity: 75%;
+        }
+
+        #third {
+            height: 100vh;
+            position: relative;
+            margin-top: 50vh;
+        }
+
+        #third img {
+            position: absolute;
+            z-index: 20;
+        }
+
+        #third .iphone-2 {
+            width: 25vw;
+            left: 25%;
+        }
+
+        #third .iphone-3 {
+            width: 25vw;
+            right: 25%;
+        }
+
+        #third h2 {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            color: white;
+            font-size: 8rem;
+            left: 15%;
+            top: -10%;
+            opacity: 75%;
+        }
+
+        #fourth {
+            margin-top: 20%;
+            height: 100vh;
+            position: relative;
+            z-index: 15;
+        }
+
+        #fourth .iphone-4 {
+            width: 40vw;
+            position: absolute;
+            left: 10%
+        }
+
+        #fourth .inu3 {
+            width: 20vw;
+            position: absolute;
+            right: 10%;
+            bottom: 10%;
+
+        }
+
+        #fourth h2 {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            color: white;
+            font-size: 8rem;
+            opacity: 75%;
+        }
+
+        #fourth h2:nth-of-type(1) {
+            right: 20%
+        }
+
+        #fourth h2:nth-of-type(2) {
+            right: 11%;
+            top: 20%;
+        }
+
+        #fifth {
+            margin-top: 20vh;
+            height: 160vh;
+            position: relative;
+        }
+
+        #fifth .iphone-5 {
+            position: absolute;
+            width: 45vw;
+            transform: rotate(90deg);
+            top: 40%;
+            left: 5%;
+        }
+
+        #fifth .iphone-6 {
+            position: absolute;
+            width: 45vw;
+            right: 5%;
+            top: 25%;
+        }
+
+        #fifth h2 {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            color: white;
+            font-size: 8rem;
+            opacity: 70%;
+            top: 5%;
+        }
+
+        #fifth h2:nth-of-type(1) {
+            right: 51%;
+
+        }
+
+        #fifth h2:nth-of-type(2) {
+            right: 33%;
+
+        }
+
+        #sixth {
+            height: 100vh;
+            position: relative;
+        }
+
+        #sixth .iphone-7 {
+            position: absolute;
+            top:15%;
+            left: 20%;
+            width: 60vw;
+        }
+        #sixth h2 {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            color: white;
+            font-size: 8rem;
+            opacity: 70%;
+            bottom:-3%;
+            left:30%;
+            
+        }
+        #thanks{
+            margin-top: 20vh;
+            position: relative;
+            height: 90vh;
+        }
+
+        #thanks .ramen{
+            position: absolute;
+           width:40vw ;
+           left:15%;
+        }
+        #thanks .inu4{
+            position: absolute;
+           width:20vw ;
+           right:25%;
+           top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+    <div class="loading"></div>
+    <section id="first">
+        <h1>UI設計/官網設計/parallax網頁設計</h1>
+        <img class="logo" src="imges/OK_logo.svg" alt="">
+        <img class="inu1" src="imges/Comp 1.gif" alt="">
+        <img class="inu2" src="imges/Comp 1.gif" alt="">
+    </section>
+    <section id="second">
+        <img class="iphone-1" src="imges/示意圖11.PNG" alt="">
+        <h2>快速點餐</h2>
+    </section>
+    <section id="third">
+        <img class="iphone-2" src="imges/示意圖5.PNG" alt="">
+        <img class="iphone-3" src="imges/示意圖6.PNG" alt="">
+        <h2>餐點分類</h2>
+    </section>
+    <section id="fourth">
+        <img class="iphone-4" src="imges/示意圖7.PNG" alt="">
+        <img class="inu3" src="imges/IMG_5162.PNG" alt="">
+        <h2>客製化</h2>
+        <h2>您的餐點</h2>
+    </section>
+    <section id="sixth">
+        <img class="iphone-7" src="imges/示意圖8.PNG" alt="">
+        <h2>餐點介紹</h2>
+    </section>
+    <section id="fifth">
+        <img class="iphone-5" src="imges/示意圖10.PNG" alt="">
+        <img class="iphone-6" src="imges/示意圖2.PNG" alt="">
+        <h2>簡單</h2>
+        <h2>支付</h2>
+    </section>
+<section id="thanks" >
+    <img class="ramen" src="imges/ramen-1.png" alt="">
+<img class="inu4" src="imges/柴犬4.png" alt="">
+</section>
+<hr class="white">
+    <footer class="h-[500px]">
+        <div class="container flex mx-auto pt-[50px] flex-col">
+            <div class="text-center mx-auto py-[30px]">
+                <h3 class="text-white">追蹤我們社群</h3>
+            </div>
+            <div class="flex gap-[20px] mx-auto ">
+                <a href="#">
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff; "></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+                </a>
+            </div>
+            <div class="w-[200px] mx-auto mt-[50px] mb-[10px]">
+                <a href="#">
+                    <img src="imges/OK_logo.svg" class="object-cover w-full h-full" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center py-[10px] flex-col h-[200px]">
+            <div class="flex justify-center mt-[40px]">
+                <a href="#" class="text-white text-xl py-[20px]">TOP</a>
+            </div>
+            <div class="flex gap-[20px] justify-center">
+                <h3 class="text-white text-center">Web Design / YANG YUAN MIN </h3>
+                <h3 class="text-white text-center">Photo / Unsplash</h3>
+            </div>
+            <div class="flex justify-center mt-[40px] my-[20px]">
+                <p class="text-white">© 2023 INU-KAMI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+         gsap.timeline({
+            scrollTrigger:{
+                trigger:'header',
+                endTrigger:'footer',
+               // markers: true,
+                start: 'top top',
+                end: 'top top',
+                scrub: 1,
+            }
+        }).to('.loading',{width:'100%'})
+        gsap.timeline({
+            scrollTrigger:{
+                trigger:'header',
+                // markers: true,
+                start: 'top',
+                scrub: 1,
+            }
+        })
+        gsap.registerPlugin('ScrollTrigger');
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#first',
+                // markers: true,
+                start: 'top 50%',
+                end: '+=50%',
+                scrub: 1,
+            }
+        })
+            .from('#first .logo', { opacity: 0, scale: 0.5 })
+            .from('h1', { opacity: 0, duration: 1, delay: 1 })
+            .from('#first .inu1', { x: -150, opacity: 0 }, 0)
+            .from('#first .inu2', { x: 200, opacity: 0 }, 0)
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#second',
+                //markers: true,
+                start: 'top 30%',
+                end: 'bottom 90%',
+                scrub: 1,
+            }
+        })
+            .from('#second .iphone-1', { opacity: 0, y: 150})
+            .from('#second h2', { opacity: 0, y: -150 })
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#third',
+                //markers: true,
+                start: 'top 70%',
+                end: 'top 5%',
+                scrub: 1,
+            }
+        })
+            .to('#third .iphone-2', { y: 100, duration: 3, delay: 0.5 }, 0)
+            .to('#third .iphone-3', { y: -100, duration: 3, delay: 0.5 }, 0)
+            .from('#third .iphone-2', { opacity: 0 }, 0)
+            .from('#third .iphone-3', { opacity: 0 }, 0)
+            .from('#third h2', { x: '30%', opacity: 0, duration: 1 }, 0)
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#fourth',
+                //markers: true,
+                start: 'top 70%',
+                end: 'top 10%',
+                scrub: 3,
+            }
+        })
+            .from('#fourth .iphone-4', { x: -200, opacity: 0, delay: 3, duration: 2 })
+            .from('#fourth .inu3', { x: '70%', delay: 3, duration: 2, opacity: 0 }, 0)
+            .from('#fourth h2', {
+                x: '100%',
+                opacity: 0,
+                stagger: {
+                    //each:1,
+                    amount: 1,
+                    from: 'start',
+                    //start,end,center,edges,radom
+                },
+                duration: 2
+            })
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#fifth',
+                //markers: true,
+                start: 'top 30%',
+                end: 'top ',
+                scrub: 3,
+            }
+        })
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#fifth',
+               // markers: true,
+                start: 'top 40%',
+                end: 'top ',
+                scrub: 3,
+            }
+        })
+            .from('#fifth h2:nth-of-type(1)', { y: '80%', opacity: 0 })
+            .from('#fifth h2:nth-of-type(2)', { x: '80%', opacity: 0 })
+            .from('#fifth .iphone-5', { y: '40%', opacity: 0, rotate: -10 })
+            .from('#fifth .iphone-6', { x: '80%', opacity: 0 })
+
+            gsap.timeline({
+            scrollTrigger: {
+                trigger: '#sixth',
+                //markers: true,
+                start: 'top 40%',
+                end: 'top ',
+                scrub: 3,
+            }
+        })
+        .from('#sixth .iphone-7',{y:'50%',opacity:0})
+        .from('#sixth h2',{scale:0.5,opacity:0})
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#thanks',
+                //markers: true,
+                start: 'top 40%',
+                end: 'top ',
+                scrub: 2,
+            }
+        })
+        .from('#thanks .ramen',{x:'-40%'})
+        .from('#thanks .inu4',{x:'80%'},0)
+
+    </script>
+</body>
+
+</html>

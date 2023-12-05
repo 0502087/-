@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user = {};
+        user.name = 'john';
+        user.mail='mail'
+       
+
+        const foods = [
+            {
+                id:1,
+                name:'滷肉飯',
+                price : '190'
+            },
+            {
+                id:2,
+                name:'牛肉麵',
+                price :'500'
+            },
+            {
+                id:3,
+                name:'控肉飯',
+                price:'500'
+            }
+        ];
+        // console.log(foods[1].name);
+        for(let f in foods){
+            console.log(f);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 項目清單ul+li -->
+    <ul>
+        <li>項目清單</li>
+        <li>項目清單</li>
+        <li>項目清單</li>
+        <li>項目清單</li>
+        <li>項目清單</li>
+        <li>項目清單</li>
+    </ul>
+<!-- 編號清單ol+li -->
+    <ol>
+        <li>編號清單</li>
+        <li>編號清單</li>
+        <li>編號清單</li>
+        <li>編號清單</li>
+        <li>編號清單</li>
+        <li>編號清單</li>
+    </ol>
+    <!-- 清單標題與清單敘述dl+dt&dd(不常用) -->
+    <dl>
+    <dt>清單標題</dt>
+    <dd>清單標題</dd>
+    <dt>清單標題</dt>
+    <dd>清單標題</dd>
+    <dt>清單標題</dt>
+    </dl>
+
+
+
+
+    <!-- 表格table＋tr（橫的欄）＋t（直的列）---tr把th包在裡面 順序不能錯 -->
+    <table width="600" height="400" border="1">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+        </tr>
+        <!-- th欄位的標題（粗體字 置中）
+        要粗體字就是把普通表格的d改h -->
+        <tr>
+            <th>E</th>
+            <th>F</th>
+            <th>G</th>
+            <th>H</th>
+        </tr>
+        
+    </table>
+    <!-- 表格的完整型態 thead頭（標題）＋tbody身體（內容）＋tfoot腳（備註）-->
+    <!-- border加黑線（非必要） -->
+    
+    </table>
+    <br>
+    <table width="600" height="400" border="1">
+        <thead>
+            <tr>
+                <th>標題</th>
+                <th>標題</th>
+                <th>標題</th>
+                <th>標題</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>內容</td>
+                <td>內容</td>
+                <td>內容</td>
+                <td>內容</td>
+             
+            </tr>
+            <tr>
+                <td>內容</td>
+                <td>內容</td>
+                <td>內容</td>
+                <td>內容</td>
+             
+            </tr>
+            <tr>
+                <td>內容</td>
+                <td>內容</td>
+                <td>內容</td>
+                <td>內容</td>
+             
+            </tr>
+        </tbody>
+      <tfoot>
+        <tr>
+            <td>備註</td>
+            <td>備註</td>
+            <td>備註</td>
+            <td>備註</td>
+        </tr>
+      </tfoot>
+    </table>
+
+
+
+
+
+    <body>
+        <!-- 語意標籤 -->
+
+
+        <!-- 網頁最上面的東西（只會出現一次） -->
+        <header></header>
+
+          <!-- 網頁最下面的東西（只會出現一次） -->
+        <footer></footer>
+
+        <!-- 導覽列（主選單 只會出現一次） -->
+        <nav></nav>  
+
+
+
+        <!-- 區塊 （用在外層）-->
+        <section></section>
+
+        <!-- 一大段的文章（用於新聞類較多） -->
+        <article></article>
+        
+        <!-- 側邊的選單 -->
+        <aside></aside>
+
+        <!-- 主要的內容 （只能用一次）-->
+        <main></main>
+
+        <!-- 萬用 -->
+        <div></div>
+
+        <!-- 圖片與圖說 （圖片搭配文字的狀態就可以用-->
+        <figure>  
+            <img src="1-1665355685302.png"width="400"title="傻摸爺" alt="傻摸爺">
+            <figcaption>圖說</figcaption>
+        </figure>
+        <!-- 也是圖片 與響應式網頁有關 -->
+        <picture>
+            <source src="">
+            <img src="" alt="">
+        </picture>
+
+    </body>
+
+    <!-- 排版重要知識 -->
+    <!-- div區塊 影響範圍整塊左到右（只會往下排）-->
+    <!-- span行內 （行內會往右排 沒空間才會往下）-->圖片 連結
+    <!-- 可利用右鍵>檢查判斷 看藍色區塊的範圍 -->排版都用區塊
+    <body>
+        
+        <div>區塊block</div>
+        <div>區塊block</div>
+        <div>區塊block</div>
+        <div>區塊block</div>
+        <div>區塊block</div>
+        <span>行內inline</span>
+        <span>行內inline</span>
+        <span>行內inline</span>
+        <span>行內inline</span>
+        <span>行內inline</span>
+        <span>行內inline</span>
+        <span>行內inline</span>
+        <span>行內inline</span>
+        <span>行內inline</span>
+        <span>行內inline</span>
+        <span>行內inline</span>
+        <span>行內inline</span>
+    </body>
+  
+
+
+
+
+      <!-- 字體與底線 -->
+        <div>到來表情水溝，可見。</div>
+        <!--粗體 -->
+        <b>到來表情水溝，可見。</b>
+        <br>
+        <!-- 斜體 -->
+        <i>到來表情水溝，可見。</i>
+        <br>
+        <!-- 底線 -->
+        <u>到來表情水溝，可見。</u>
+        <br>
+        <em>到來表情水溝，可見。</em>
+        <br>
+        <!-- 可組合結合包起來 -->
+        <b><i>到來表情水溝，可見。</i></b>
+        <br>
+        <!-- 刪除線 -->
+        <del>到來表情水溝，可見。</del>
+
+
+
+
+
+
+   
+
+<!-- 補課 -->
+
+
+
+
+ <div>
+    <label for="hobbylist">清單</label>
+    <input type="text" list="hobby" name="hobby" id="hobbylist">
+    <datalist id="hobby">
+        <option value="平面設計">平面設計</option>
+        <option value="網頁設計">網頁設計</option>
+        <option value="影片剪輯">影片剪輯</option>
+    </datalist>
+ </div>   
+    
+
+</body>
+</html>

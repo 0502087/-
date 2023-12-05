@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(153, 170, 186);
+            flex-direction: row;
+            /* row,column,row-reverse,column-reverse */
+            /* flex-flow: wrap row */
+
+            align-items: center;
+            /* 橫向內容對齊
+            start,center ,end
+            stretch,baseline*/
+            justify-content: ;
+            /* 直向對齊 
+            start,center,end,space-between,space-around,space-evenly*/
+        }
+        .box{width: 300px;
+            /* margin: 10px;  magin是外面的距離/padding 在裡面加距離 內容尺寸不變 類似frame的概念*/
+            /* border-box常用到所以通常寫在外部 用這個才能維持內容的尺寸 */
+            padding: 10px;
+
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="box">
+<h2>一絲榮譽異常，逐步。</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vitae sapiente provident ab, numquam aliquid illo illum accusamus! Ex, consectetur.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vitae sapiente provident ab, numquam aliquid illo illum accusamus! Ex, consectetur.</p>
+</div>
+     <div class="box">
+<h2>一絲榮譽異常，逐步。</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vitae sapiente provident ab, numquam aliquid illo illum accusamus! Ex, consectetur.</p>
+     </div>
+     <div class="box">
+<h2>一絲榮譽異常，逐步。</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vitae sapiente provident ab</p>
+     </div>
+     <div class="box">
+<h2>一絲榮譽異常，逐步。</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vitae sapiente provident ab, numquam aliquid illo illum accusamus! Ex, consectetur.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vitae sapiente provident ab, numquam aliquid illo illum accusamus! Ex, consectetur.</p>
+     </div>
+    </div>
+
+
+</body>
+</html>

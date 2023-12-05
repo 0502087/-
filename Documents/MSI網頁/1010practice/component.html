@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<div id="app">
+    <app-title>123</app-title>
+</div>
+
+<body>
+    <script>
+        let app = Vue.createApp({
+            trmplate: `<h1>hello 123</h1>`,
+            data() {
+                return {
+                    title: 'hello'
+                }
+            }, components: {
+                'app-title': {
+                    template: `<h1><slot /></h1>`,
+                    data() {
+                        return {
+                            title: 'hello component'
+                        }
+                    }
+                }
+            }
+        });
+        app.component('app-title', {
+            data() {
+                return {
+                    title: 'hello component'
+                }
+            }
+        })
+            .mount('#app')
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海龜保育</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    body {
+        background-color: rgb(211, 255, 243);
+    }
+
+    .overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        inset: 0;
+    }
+
+    .overlay:nth-of-type(1) {
+        background: #6eb9ff;
+    }
+
+    .overlay:nth-of-type(2) {
+        background: #2494fd;
+    }
+
+    .overlay:nth-of-type(3) {
+        background: #273f8d;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="overlay"></div>
+        <div class="overlay"></div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="picture">
+                <img src="img/GettyImages-1153396626.webp" alt="">
+            </div>
+            <div class="text">
+                <h1>海龜保育：守護瀕危物種的海洋之使命</h1>
+                <p>自古以來，海龜一直是海洋中的神秘生物，它們的存在充滿著神秘和敬畏。然而，由於人類活動的不斷擴大，</p>
+                <p>海龜種群正面臨著前所未有的威脅，成為瀕臨滅絕的物種之一。為了守護這些珍貴的生物，海龜保育變得至關重要。</p>
+                <a href="#" class="start">繼續</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        let animation = gsap.timeline()
+            .to('h1', { opacity: 0, duration: 0.3 })
+            .to('p', { opacity: 0, duration: 0.3 })
+            .to('img', { opacity: 0, duration: 0.3 })
+            .to('.start', { opacity: 0, duration: 0.2 })
+
+        let start = document.querySelector('.start');
+        animation.pause();
+        start.onclick = function () {
+
+            animation.restart();
+        }
+        gsap.timeline()
+            .fromTo('.overlay', {
+                x: '-100%',
+                stagger: {
+                    amount: 0.3,
+                    from: 'start',
+                }
+                , duration: 1
+            }, {
+                x: '100%', stagger: {
+                    amount: 0.3,
+                    from: 'start',
+                }, duration: 1,delay:0.4
+            }).from('.container', { opacity: 0, duration: 0.3 })
+
+
+    </script>
+</body>
+
+</html>

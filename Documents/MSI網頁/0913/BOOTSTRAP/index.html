@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP 練習</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-warning " data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/id/77/1600/900" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/75/1600/900" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/74/1600/900" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/73/1600/900" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section style="padding-block:100px">
+        <div class="container">
+            <div class="row gy-5 gy-lg-0">
+                <div class="col-lg-4 text-start text-lg-center d-lg-block d-flex align-items-center">
+                    <div class="mb-3 col-lg-12 col-3 ms-5 ms-lg-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" fill="currentColor"
+                            class="bi bi-badge-wc-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm11.666 1.89c.682 0 1.139.47 1.187 1.107H14v-.11c-.053-1.187-1.024-2-2.342-2-1.604 0-2.518 1.05-2.518 2.751v.747c0 1.7.905 2.73 2.518 2.73 1.314 0 2.285-.792 2.342-1.939v-.114h-1.147c-.048.615-.497 1.05-1.187 1.05-.839 0-1.318-.62-1.318-1.727v-.742c0-1.112.488-1.754 1.318-1.754zm-6.188.926h.044L6.542 11h1.006L9 5.001H7.818l-.82 4.355h-.056L5.97 5.001h-.94l-.972 4.355h-.053l-.827-4.355H2L3.452 11h1.005l1.02-4.184z" />
+                        </svg>
+                    </div>
+                    <div class="col-9 col-lg-12">
+                        <h3>hello</h3>
+                        <p>
+                            監督採訪，方式好友。
+                        </p>
+                        <a href="#" class="btn btn-primary" data-bs-target="#about-1 " data-bs-toggle=modal>more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-start text-lg-center d-lg-block d-flex align-items-center">
+                    <div class="mb-3 col-lg-12 col-3 ms-5 ms-lg-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" fill="currentColor"
+                            class="bi bi-badge-wc-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm11.666 1.89c.682 0 1.139.47 1.187 1.107H14v-.11c-.053-1.187-1.024-2-2.342-2-1.604 0-2.518 1.05-2.518 2.751v.747c0 1.7.905 2.73 2.518 2.73 1.314 0 2.285-.792 2.342-1.939v-.114h-1.147c-.048.615-.497 1.05-1.187 1.05-.839 0-1.318-.62-1.318-1.727v-.742c0-1.112.488-1.754 1.318-1.754zm-6.188.926h.044L6.542 11h1.006L9 5.001H7.818l-.82 4.355h-.056L5.97 5.001h-.94l-.972 4.355h-.053l-.827-4.355H2L3.452 11h1.005l1.02-4.184z" />
+                        </svg>
+                    </div>
+                    <div class="col-9 col-lg-12">
+                        <h3>hello</h3>
+                        <p>
+                            監督採訪，方式好友。
+                        </p>
+                        <a href="#" class="btn btn-primary">more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-start text-lg-center d-lg-block d-flex align-items-center">
+                    <div class="mb-3 col-lg-12 col-3 ms-5 ms-lg-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" fill="currentColor"
+                            class="bi bi-badge-wc-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm11.666 1.89c.682 0 1.139.47 1.187 1.107H14v-.11c-.053-1.187-1.024-2-2.342-2-1.604 0-2.518 1.05-2.518 2.751v.747c0 1.7.905 2.73 2.518 2.73 1.314 0 2.285-.792 2.342-1.939v-.114h-1.147c-.048.615-.497 1.05-1.187 1.05-.839 0-1.318-.62-1.318-1.727v-.742c0-1.112.488-1.754 1.318-1.754zm-6.188.926h.044L6.542 11h1.006L9 5.001H7.818l-.82 4.355h-.056L5.97 5.001h-.94l-.972 4.355h-.053l-.827-4.355H2L3.452 11h1.005l1.02-4.184z" />
+                        </svg>
+                    </div>
+                    <div class="col-9 col-lg-12">
+                        <h3>hello</h3>
+                        <p>
+                            監督採訪，方式好友。
+                        </p>
+                        <a href="#" class="btn btn-primary">more</a>
+                    </div>
+                </div>
+
+    </section>
+    <div class="modal fade" id="about-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   <p>我會不好意思批准一下子電話行動試驗，驚人怪物財政城市角色即使戰士先後，一是指出相機神秘必須開發主演對不起</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 gy-4">
+                    <div class="flex flex-column shadow rounded-3 overflow-hidden ">
+                        <div class="ratio ratio-16x9">
+                            <img src="https://picsum.photos/id/33/800/600" alt="" class="w-100 h-100  object-fit-cover ">
+                        </div>
+                        <div class="p-3">
+                            <h3>真不愧是暗影大人</h3>
+                            <p>這是全部創業解釋，篇文章而是請問本公司體會生產雙方我不內容常常眼裡影片模糊，歷史位於頁面優點請教自。</p>
+                        </div>
+                        <div class="p-3"><a href="#" class="btn btn-success">link</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 gy-4">
+                    <div class="flex flex-column shadow rounded-3 overflow-hidden ">
+                        <div class="ratio ratio-16x9">
+                            <img src="https://picsum.photos/id/98/800/600" alt="" class="w-100 h-100  object-fit-cover ">
+                        </div>
+                        <div class="p-3">
+                            <h3>真不愧是暗影大人</h3>
+                            <p>這是全部創業解釋，篇文章而是請問本公司體會生產雙方我不內容常常眼裡影片模糊，歷史位於頁面優點請教自。</p>
+                        </div>
+                        <div class="p-3"><a href="#" class="btn btn-success">link</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 gy-4">
+                    <div class="flex flex-column shadow rounded-3 overflow-hidden ">
+                        <div class="ratio ratio-16x9">
+                            <img src="https://picsum.photos/id/34/800/600" alt="" class="w-100 h-100  object-fit-cover ">
+                        </div>
+                        <div class="p-3">
+                            <h3>真不愧是暗影大人</h3>
+                            <p>這是全部創業解釋，篇文章而是請問本公司體會生產雙方我不內容常常眼裡影片模糊，歷史位於頁面優點請教自。</p>
+                        </div>
+                        <div class="p-3"><a href="#" class="btn btn-success">link</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 gy-4">
+                    <div class="flex flex-column shadow rounded-3 overflow-hidden ">
+                        <div class="ratio ratio-16x9">
+                            <img src="https://picsum.photos/id/89/800/600" alt="" class="w-100 h-100  object-fit-cover ">
+                        </div>
+                        <div class="p-3">
+                            <h3>真不愧是暗影大人</h3>
+                            <p>這是全部創業解釋，篇文章而是請問本公司體會生產雙方我不內容常常眼裡影片模糊，歷史位於頁面優點請教自。</p>
+                        </div>
+                        <div class="p-3"><a href="#" class="btn btn-success">link</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
